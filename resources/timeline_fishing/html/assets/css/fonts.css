@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Arame';
+  src: url('../fonts/Arame.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face { 
+  font-family: 'Pink';
+  src: url('../fonts/PinkSans.ttf');
+}
+
+@font-face { 
+  font-family: 'Bold';
+  src: url('../fonts/Rajdhani-Bold.ttf');
+}
+@font-face { 
+  font-family: 'SemiBold';
+  src: url('../fonts/Rajdhani-SemiBold.ttf');
+}
+@font-face { 
+  font-family: 'Medium';
+  src: url('../fonts/Rajdhani-Medium.ttf');
+}
+@font-face { 
+  font-family: 'Regular';
+  src: url('../fonts/Rajdhani-Regular.ttf');
+}

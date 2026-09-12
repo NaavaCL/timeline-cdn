@@ -1,0 +1,65 @@
+@font-face{
+    font-family: 'Arame-Light';
+    src: url('../fonts/Arame-Thin.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Arame-Medium';
+    src: url('../fonts/Arame.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Arame-Bold';
+    src: url('../fonts/Arame-Bold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Gilroy-Light';
+    src: url('../fonts/Gilroy-Light.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Gilroy-Medium';
+    src: url('../fonts/Gilroy-Medium.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Gilroy-Regular';
+    src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Gilroy-SemiBold';
+    src: url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Gilroy-Bold';
+    src: url('../fonts/Gilroy-Bold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Nekst-Black';
+    src: url('../fonts/Nekst-Black.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Nekst-Bold';
+    src: url('../fonts/Nekst-Bold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Nekst-Light';
+    src: url('../fonts/Nekst-Light.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Nekst-Medium';
+    src: url('../fonts/Nekst-Medium.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Ephesis-Regular';
+    src: url('../fonts/Ephesis-Regular.ttf') format('truetype');
+}
+

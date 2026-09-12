@@ -1,0 +1,20 @@
+@font-face { 
+  font-family: 'Bold';
+  src: url('../fonts/Purista-Bold.ttf');
+}
+@font-face { 
+  font-family: 'BoldItalic';
+  src: url('../fonts/Purista-BoldItalic.ttf');
+}
+@font-face { 
+  font-family: 'Light';
+  src: url('../fonts/Purista-Light.ttf');
+}
+@font-face { 
+  font-family: 'Medium';
+  src: url('../fonts/Purista-Medium.ttf');
+}
+@font-face { 
+  font-family: 'SemiBold';
+  src: url('../fonts/Purista-SemiBold.ttf');
+}

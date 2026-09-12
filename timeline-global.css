@@ -1,0 +1,4 @@
+@import url('./fonts/orbitron/fonts.css');
+:root{--timeline-font:'Orbitron',sans-serif;}
+html,body,button,input,textarea,select,option{font-family:var(--timeline-font)!important;}
+body *:not(i):not([class~='fas']):not([class~='far']):not([class~='fal']):not([class~='fad']):not([class~='fab']):not([class^='fa-']):not([class*=' fa-']):not([class*='material-icons']):not([class*='material-symbol']):not([class^='mdi']):not([class*=' mdi-']){font-family:var(--timeline-font)!important;}

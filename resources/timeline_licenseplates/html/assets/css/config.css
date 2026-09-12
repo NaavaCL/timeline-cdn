@@ -1,0 +1,20 @@
+:root {
+	/*main-container*/
+	--bg_main-cont: radial-gradient(769.5% 211.3% at 50% 50%, rgb(0, 0, 0) 0%, rgb(3, 152, 238) 100%);
+	--border-main-cont: #0398ee91;
+
+	/*bg-top-ct-btn*/
+	--bg-top-ct-btn: radial-gradient(452.98% 176.13% at 50% 50%, rgb(63, 178, 255) 11.643175035715103%, rgb(63, 178, 255) 100%);
+
+	/*color on number*/
+	--num-color: #11264A;
+
+	/*warning*/
+	--warning-color: #FFC51C;
+	--war-text-shadow-first: rgba(255, 197, 28, 0.75);
+	--war-text-shadow-second: rgba(255, 255, 255, 0.75);
+	/*bottom-btns*/
+	--btm-btn-first: radial-gradient(445.63% 163.4% at 50% 50%, rgb(63, 178, 255) 0%, rgb(63, 178, 255) 100%);; 
+	--btm-btn-second: radial-gradient(406.02% 148.87% at 50% 50%, rgb(65, 255, 63) 0%, rgb(65, 255, 63) 100%);; 
+
+}

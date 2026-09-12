@@ -1,0 +1,241 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	user-select: none;  
+}
+html, body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	overflow: hidden; 
+}
+.form {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+
+.main-container {
+	position: absolute;
+	width: 34.375vw;
+	height: 25.625vw;
+	background: var(--bg_main-cont);
+	border: 0.052vw solid var(--border-main-cont);
+}
+
+
+.bg-logo {
+	position: absolute;
+	width: 34.375vw;
+	z-index: -0;
+	opacity: 0.05;
+}
+.bg-logo img:nth-child(1) {
+	width: 34.375vw;
+}
+.num-img-left {
+	position: absolute;
+	width: 8.698vw;
+	height: 3.385vw;
+	z-index: 2;
+	transform: rotate(10deg);
+	top: 0.834vw;
+	left: -1.042vw;
+}
+.num-img-left img:nth-child(1) {
+	width: 8.698vw;
+	height: 3.385vw;
+	filter: blur(1.51vw);
+}
+.num-img-left img:nth-child(2) {
+	position: absolute;
+	width: 8.698vw;
+	height: 3.385vw;
+}
+.top-ct {
+	width: 31.146vw;
+	z-index: 1;
+}
+
+
+
+.top-ct-middle-text span:nth-child(1) {
+	text-align: center;
+	width: 13.542vw;
+	font-size: 1.667vw;
+	font-family: "Black";
+	color: #fff;
+	text-shadow: 0 0 3.333vw rgba(255, 255, 255, 0.75);
+}
+.top-ct-middle-text span:nth-child(2) {
+	text-align: center;
+	width: 20.469vw;
+	font-size: 0.625vw;
+	font-family: "Light";
+	color: #ffffffcb;
+	text-shadow: 0 0 3.333vw rgba(255, 255, 255, 0.75);
+}
+.top-ct-btn {
+	width: 4.167vw;
+	height: 1.458vw;
+	font-size: 0.521vw;
+	font-family: "Bold";
+	color: #fff;
+	box-shadow: inset 0 0 0.313vw 0.104vw rgba(0, 0, 0, 0.5);
+	background: var(--bg-top-ct-btn);
+	transition: all 0.15s ease;
+	cursor: pointer;
+	margin-left: 1.25vw;
+}
+.top-ct-btn:hover {
+	opacity: 0.75;
+	scale: 0.95;
+}
+.top-ct-btn:active {
+	opacity: 1;
+	scale: 1;
+}
+
+
+.num-main {
+	width: 26.354vw;
+	height: 10.625vw;
+	background-image: url(../images/main-number-bg.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+.num-main input:nth-child(1) {
+	position: absolute;
+	width: 23.958vw;
+	text-align: center;
+	text-transform: uppercase;
+	background: none;
+	border: none;
+	outline: none;
+	font-size: 3.333vw;
+	font-family: "Black";
+	color: var(--num-color);
+	text-shadow: 0 0 3.854vw #11264a28;
+	margin-top: 1.417vw;
+}
+
+
+.warning {
+	width: 20.625vw;
+	height: 4.219vw;
+	background: #00000041;
+	z-index: 1;
+	margin-top: 0.833vw;
+}
+.war-icons {
+	position: absolute;
+	width: 20.625vw;
+	height: 4.219vw;
+}
+.war-icons img:nth-child(1) {
+	position: absolute;
+	width: 1.823vw;
+	height: 1.979vw;
+	top: -0.417vw;
+	left: -0.417vw;
+	transform: rotate(10deg);
+}
+.war-icons img:nth-child(2) {
+	position: absolute;
+	width: 1.823vw;
+	height: 1.979vw;
+	right: -0.417vw;
+	bottom: -0.417vw;
+	transform: rotate(-10deg);
+}
+.war-text span:nth-child(1) {
+	font-size: 0.729vw;
+	font-family: "Black";
+	color: var(--warning-color);
+	text-shadow: 0 0 0.99vw var(--war-text-shadow-first);
+}
+.war-text span:nth-child(2) {
+	width: 16.354vw;
+	text-align: center;
+	font-size: 0.521vw;
+	font-family: "Regular";
+	color: #fff;
+	text-shadow: 0 0 0.885vw var(--war-text-shadow-second);
+}
+
+
+.bottom-btns {
+	margin-top: 0.625vw;
+}
+.btm-first-btn {
+	width: 6.25vw;
+	height: 2.292vw;
+	background: var(--btm-btn-first);
+	box-shadow: inset 0 0 0.313vw 0.104vw rgba(0, 0, 0, 0.5);
+	font-size: 0.625vw;
+	color: #fff;
+	font-family: "Bold";
+	text-shadow: 0 0 0.677vw rgba(0, 0, 0, 0.75);
+	transition: all 0.15s ease;
+	cursor: pointer;
+}
+.btm-first-btn:hover {
+	scale: 0.95;
+	opacity: 0.75;
+}
+.btm-first-btn:active {
+	scale: 1;
+	opacity: 1;
+}
+.btm-second-btn {
+	width: 6.25vw;
+	height: 2.292vw;
+	background: var(--btm-btn-second);
+	box-shadow: inset 0 0 0.313vw 0.104vw rgba(0, 0, 0, 0.5);
+	font-size: 0.625vw;
+	color: #fff;
+	font-family: "Bold";
+	text-shadow: 0 0 0.677vw rgba(0, 0, 0, 0.75);
+	transition: all 0.15s ease;
+	cursor: pointer;
+	margin-left: 0.625vw;
+}
+.btm-second-btn:hover {
+	scale: 0.95;
+	opacity: 0.75;
+}
+.btm-second-btn:active {
+	scale: 1;
+	opacity: 1;
+}
+
+
+
+.form, .num-img-left, .top-ct-btn, .num-main, .war-icons, .bottom-btns, .btm-first-btn, .btm-second-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.main-container, .warning, .war-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.top-ct {
+	display: flex;
+	align-items: start;
+	justify-content: end;
+}
+.top-ct-middle-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}

@@ -1,0 +1,1925 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Black';
+    src: url('../fonts/Akrobat-Black.otf');
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url('../fonts/Akrobat-Bold.otf');
+}
+
+@font-face {
+    font-family: 'ExtraBold';
+    src: url('../fonts/Akrobat-ExtraBold.otf');
+}
+
+@font-face {
+    font-family: 'ExtraLight';
+    src: url('../fonts/Akrobat-ExtraLight.otf');
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url('../fonts/Akrobat-Light.otf');
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url('../fonts/Akrobat-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url('../fonts/Akrobat-Regular.otf');
+}
+
+@font-face {
+    font-family: 'SemiBold';
+    src: url('../fonts/Akrobat-SemiBold.otf');
+}
+
+@font-face {
+    font-family: 'Thin';
+    src: url('../fonts/Akrobat-Thin.otf');
+}
+
+@font-face {
+    font-family: 'Dafoe';
+    src: url('../fonts/MrDafoe-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.main_revivestation {
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_revivestation-container {
+    padding: 3.2407vmin;
+
+    width: 44.9074vmin;
+    height: 65.2778vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 1.8519vmin;
+    background: radial-gradient(145.59% 70.6% at 11.53% 87.18%, rgba(0, 195, 255, 0.08) 0%, rgba(0, 195, 255, 0.00) 100%), radial-gradient(55.5% 44.91% at 82.91% 24.28%, rgba(0, 195, 255, 0.09) 0%, rgba(0, 195, 255, 0.00) 100%), #010403;
+}
+
+.main_revivestation-heading {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_revivestation-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main_revivestation-header h1 {
+    color: #FFF;
+    text-shadow: 0vmin 0vmin 0.463vmin rgba(255, 255, 255, 0.50);
+    font-family: Montserrat;
+    font-size: 2.2222vmin;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.1111vmin;
+    text-transform: uppercase;
+}
+
+.main_revivestation-header h2 {
+    color: #FFF;
+    text-shadow: 0vmin 0.3704vmin 0.3704vmin rgba(0, 0, 0, 0.50);
+    font-family: Montserrat;
+    font-size: 1.1111vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0333vmin;
+    text-transform: uppercase;
+}
+
+.main_revivestation-heading img {
+    width: 2.5926vmin;
+    height: 2.5926vmin;
+    cursor: pointer;
+}
+
+.main_revivestation-icons {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_revivestation-costs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2778vmin;
+}
+
+.main_revivestation-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_revivestation-infos h3 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.2963vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0648vmin;
+}
+
+.main_revivestation-infos h4 {
+    color: #23883B;
+    font-family: Montserrat;
+    font-size: 1.1111vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.0556vmin;
+}
+
+.main_revivestation-items {
+    height: 41.2037vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.463vmin;
+
+    overflow-y: scroll;
+}
+
+.main_revivestation-items::-webkit-scrollbar {
+    display: none;
+}
+
+.main_revivestation-item {
+    padding: 1.4815vmin;
+
+    width: 39.3519vmin;
+    height: 6.4815vmin;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 0.2778vmin;
+    background: rgba(32, 145, 197, 0.05);
+}
+
+.main_revivestation-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8519vmin;
+}
+
+.main_revivestation-medic {
+    width: 3.7037vmin;
+    height: 3.7037vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.463vmin;
+    background: #093641;
+    box-shadow: 0vmin 0vmin 1.3889vmin 0vmin rgba(0, 195, 255, 0.50) inset;
+}
+
+.main_revivestation-medic img {
+    width: 1.8519vmin;
+    height: 2.2267vmin;
+}
+
+.main_revivestation-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.1852vmin;
+}
+
+.main_revivestation-infos h1 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.3889vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.main_revivestation-infos h2 {
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Montserrat;
+    font-size: 1.2037vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4444vmin;
+}
+
+.main_revivestation-item button {
+    width: 10.1852vmin;
+    height: 3.2407vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: none;
+    border: none;
+    border-radius: 0.2778vmin;
+    background: #093441;
+    box-shadow: 0vmin 0vmin 2.7778vmin 0vmin #00c3ff inset;
+    cursor: pointer;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.2037vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.main_revivestation-item button:hover {
+    box-shadow: 0vmin 0vmin 1.3889vmin 0vmin #00c3ff inset;
+}
+
+.main_scoreboard {
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-top: 2.7778vmin;
+}
+
+.main_scoreboard-container {
+    width: 60.0926vmin;
+    height: 14.537vmin;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-inline: 1.8519vmin;
+    border-radius: 1.8519vmin;
+    background: radial-gradient(145.59% 70.6% at 11.53% 87.18%, rgba(0, 195, 255, 0.08) 0%, rgba(0, 195, 255, 0.00) 100%), radial-gradient(55.5% 44.91% at 82.91% 24.28%, rgba(0, 195, 255, 0.09) 0%, rgba(0, 195, 255, 0.00) 100%), #010403;
+}
+
+.main_scoreboard-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.463vmin;
+}
+
+.main_scoreboard-item {
+    position: relative;
+    width: 6.4815vmin;
+    height: 8.7963vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.2778vmin;
+    background: rgba(197, 101, 32, 0.05);
+}
+
+.main_scoreboard-item img {
+    width: 3.9815vmin;
+    height: 4.537vmin;
+}
+
+.main_scoreboard-item h1 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.2037vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.0361vmin;
+}
+
+.main_scoreboard-rec {
+    position: absolute;
+    left: 50%;
+    bottom: -1.2037vmin;
+    transform: translateX(-50%);
+
+    width: 5.8704vmin;
+    height: 2.3148vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../svg/scoreboard/rectangle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main_scoreboard-rec p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.2037vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0361vmin;
+    text-transform: uppercase;
+}
+
+.main_scoreboard-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.0926vmin;
+}
+
+.main_scoreboard-header h2 {
+    color: #FFF;
+    text-shadow: 0vmin 0vmin 0.463vmin rgba(255, 255, 255, 0.50);
+    font-family: Montserrat;
+    font-size: 1.8519vmin;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.0926vmin;
+    text-transform: uppercase;
+}
+
+.main_scoreboard-header h3 {
+    color: #FFF;
+    text-shadow: 0vmin 0.3704vmin 0.3704vmin rgba(0, 0, 0, 0.50);
+    font-family: Montserrat;
+    font-size: 1.0185vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0306vmin;
+    text-transform: uppercase;
+}
+
+.main_rental {
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_rental-container {
+    padding-block: 3.5185vmin;
+    padding-inline: 5.7407vmin;
+
+    width: 95.3704vmin;
+    height: 74.0741vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 1.8519vmin;
+    background: radial-gradient(105.23% 48.5% at 11.53% 87.18%, rgba(0, 195, 255, 0.08) 0%, rgba(0, 195, 255, 0.00) 100%), radial-gradient(55.5% 44.91% at 82.91% 24.28%, rgba(0, 195, 255, 0.07) 0%, rgba(0, 195, 255, 0.00) 100%), #010403;
+}
+
+.main_rental-heading {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_rental-heading img {
+    width: 2.5926vmin;
+    height: 2.5926vmin;
+    cursor: pointer;
+}
+
+.main_rental-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.0926vmin;
+}
+
+.main_rental-header h1 {
+    color: #FFF;
+    text-shadow: 0vmin 0vmin 0.463vmin rgba(255, 255, 255, 0.50);
+    font-family: Montserrat;
+    font-size: 2.2222vmin;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.1111vmin;
+    text-transform: uppercase;
+}
+
+.main_rental-header h2 {
+    color: #FFF;
+    text-shadow: 0vmin 0.3704vmin 0.3704vmin rgba(0, 0, 0, 0.50);
+    font-family: Montserrat;
+    font-size: 1.1111vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0333vmin;
+    text-transform: uppercase;
+}
+
+.main_rental-container>img {
+    width: 62.1296vmin;
+    height: 23.0556vmin;
+
+    object-fit: contain;
+}
+
+.main_rental-container h3 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 3.7037vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.2407vmin;
+}
+
+.main_rental-settings {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_rental-setting-rec {
+    width: 27.3148vmin;
+    height: 5vmin;
+    flex-shrink: 0;
+
+    border-radius: 0.463vmin;
+    background: linear-gradient(90deg, rgba(32, 164, 197, 0) 15.82%, rgba(32, 164, 197, 0.1) 100%);
+}
+
+.main_rental-setting-rec:nth-child(1) {
+    padding-inline: 0.9259vmin;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_rental-setting-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.9259vmin;
+}
+
+.main_rental-time-rec {
+    width: 3.7037vmin;
+    height: 3.7037vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.463vmin;
+    background: #093641;
+    box-shadow: 0vmin 0vmin 1.3889vmin 0vmin rgba(0, 195, 255, 0.50) inset;
+}
+
+.main_rental-time-rec img {
+    width: 2.5926vmin;
+    height: 2.5926vmin;
+}
+
+.main_rental-setting-time span {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.3889vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.0903vmin;
+}
+
+.main_rental-setting-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.9259vmin;
+}
+
+.main_rental-setting-arrow {
+    width: 2.7778vmin;
+    height: 2.7778vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.1852vmin;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0vmin 0.3704vmin 1.8519vmin 0vmin rgba(0, 0, 0, 0.50) inset;
+
+    cursor: pointer;
+}
+
+.main_rental-setting-arrow img {
+    width: 1.8519vmin;
+    height: 1.8519vmin;
+}
+
+.main_rental-setting-arrow img {
+    width: 1.8519vmin;
+    height: 1.8519vmin;
+
+    transform: rotate(180deg);
+}
+
+.main_rental-setting-selection span {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.2963vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.0843vmin;
+}
+
+.main_rental-setting-rec:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_rental-setting-rec button {
+    width: 25.8333vmin;
+    height: 3.7037vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: none;
+    border: none;
+    border-radius: 0.463vmin;
+    background: #093141;
+    box-shadow: 0vmin 0vmin 1.8519vmin 0vmin rgba(0, 195, 255, 0.50) inset;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.2963vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.0843vmin;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.main_rental-setting-rec button:hover {
+    transform: scaleX(0.91) scaleY(0.91);
+}
+
+.main_rental-setting-rec:nth-child(3) {
+    padding-inline: 0.9259vmin;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_rental-setting-color {
+    width: 3.7037vmin;
+    height: 3.7037vmin;
+
+    border-radius: 0.463vmin;
+    opacity: 0.8;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.main_rental-setting-color:hover,
+.main_rental-setting-color.active {
+    transform: scaleX(1.1) scaleY(1.1);
+}
+
+.main_rental-cars {
+    width: 83.7963vmin;
+
+    display: flex;
+    align-items: center;
+
+    gap: 0.9259vmin;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    padding-bottom: 2.9259vmin;
+}
+
+.main_rental-cars::-webkit-scrollbar {
+    height: 0.7259vmin;
+    border-radius: 0.463vmin;
+    background: #00b3ea69;
+}
+
+.main_rental-cars::-webkit-scrollbar-thumb {
+    background: #00a8ea;
+    border-radius: 0.463vmin;
+
+    cursor: pointer;
+}
+
+.main_rental-car {
+    flex-shrink: 0;
+
+    padding: 1.8519vmin;
+
+    width: 27.3148vmin;
+    height: 19.9074vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 0.463vmin;
+    background: rgba(32, 186, 197, 0.04);
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.main_rental-car-heading {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_rental-car-heading span {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.2963vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.0843vmin;
+}
+
+.main_rental-car-price {
+    width: 7.4074vmin;
+    height: 2.3148vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.1852vmin;
+    background: #23883B;
+    box-shadow: 0vmin 0.3704vmin 1.8519vmin 0vmin rgba(0, 0, 0, 0.50) inset;
+}
+
+.main_rental-car-price span {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.2037vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.main_rental-car img {
+    width: 21.2963vmin;
+    height: 17.3148vmin;
+}
+
+.main_rental-car>span {
+    align-self: flex-start;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.6667vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.1083vmin;
+}
+
+.main_rental-car:hover,
+.main_rental-car.active {
+    border-radius: 0.463vmin;
+    border: 0.0926vmin solid rgba(0, 195, 255, 0.25);
+    background: linear-gradient(180deg, rgba(32, 172, 197, 0) 1.16%, rgbrgba(32, 145, 197, 0.2)0%);
+}
+
+.main_banking {
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_banking-container {
+    width: 105.1852vmin;
+    height: 59.7222vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-block: 2.7778vmin;
+    padding-inline: 4.1667vmin;
+
+    border-radius: 1.8519vmin;
+    background: radial-gradient(105.23% 48.5% at 11.53% 87.18%, rgba(0, 195, 255, 0.06) 0%, rgba(0, 195, 255, 0.00) 100%), radial-gradient(55.5% 44.91% at 82.91% 24.28%, rgba(0, 195, 255, 0.07) 0%, rgba(0, 195, 255, 0.00) 100%), #010403;
+    overflow: hidden;
+}
+
+.main_banking-heading {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_banking-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_banking-heading img {
+    width: 2.5926vmin;
+    height: 2.5926vmin;
+    cursor: pointer;
+}
+
+.main_banking-header h1 {
+    color: #FFF;
+    text-shadow: 0vmin 0vmin 0.463vmin rgba(255, 255, 255, 0.50);
+    font-family: Montserrat;
+    font-size: 2.2222vmin;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.1111vmin;
+    text-transform: uppercase;
+}
+
+.main_banking-header h2 {
+    color: #FFF;
+    text-shadow: 0vmin 0.3704vmin 0.3704vmin rgba(0, 0, 0, 0.50);
+    font-family: Montserrat;
+    font-size: 1.1111vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0333vmin;
+    text-transform: uppercase;
+}
+
+.main_banking-actions {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_banking-cards {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.9259vmin;
+}
+
+.main_banking-card {
+    width: 35.0926vmin;
+    height: 19.1667vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 2.3148vmin;
+
+    background-image: url(../svg/banking/card.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main_banking-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.2778vmin;
+}
+
+.main_banking-top h1 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.3889vmin;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main_banking-top h2 {
+    color: rgba(255, 255, 255, 0.25);
+    font-family: Montserrat;
+    font-size: 1.1111vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_banking-top h3 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.3889vmin;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4792vmin;
+}
+
+.main_banking-bottom {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main_banking-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_banking-info h1 {
+    color: rgba(255, 255, 255, 0.35);
+    font-family: Montserrat;
+    font-size: 1.1111vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.main_banking-info h2 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.2037vmin;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main_banking-bank {
+    width: 35.0926vmin;
+    height: 11.1111vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2778vmin;
+
+    background-image: url(../svg/banking/bank.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main_banking-bank h1 {
+    color: rgba(255, 255, 255, 0.60);
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-family: Montserrat;
+    font-size: 1.2963vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.main_banking-bank h2 {
+    color: #2BBB4D;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-family: Montserrat;
+    font-size: 2.2222vmin;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main_banking-transactions {
+    height: 31.2037vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.463vmin;
+    align-items: flex-start;
+}
+
+.main_banking-transaction {
+    width: 60.8333vmin;
+    height: 5.5556vmin;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0.9259vmin;
+
+    border-radius: 0.463vmin;
+    background: rgba(32, 150, 197, 0.04);
+}
+
+.main_banking-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_banking-text h3 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.2963vmin;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.main_banking-text h4 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.9259vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_banking-account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_banking-account h5 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.0185vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.main_banking-rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.4778vmin;
+
+    border-radius: 0.463vmin;
+    background: #23883B;
+    box-shadow: 0vmin 0.3704vmin 1.8519vmin 0vmin rgba(0, 0, 0, 0.50) inset;
+}
+
+#withdraw {
+    background: #BA3C3C;
+}
+
+#transfer {
+    background: #c4a82b;
+}
+
+#deposit {
+    background: #23883B;
+}
+
+.main_banking-rectangle span {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.0185vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.0662vmin;
+}
+
+.main_banking-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main_banking-date h6 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.0185vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.main_banking-date span {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.0185vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_banking-aktionen {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_banking-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1111vmin;
+}
+
+.main_banking-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9259vmin;
+}
+
+.main_banking-field {
+    position: relative;
+
+    width: 26.3476vmin;
+    height: 8.3333vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.463vmin;
+    background: rgba(32, 150, 197, 0.04);
+}
+
+.main_banking-einzahlen {
+    position: absolute;
+
+    top: 0.0926vmin;
+    left: 0.0417vmin;
+
+    width: 7.6296vmin;
+    height: 8.4259vmin;
+
+    background-image: url(../svg/banking/einzahlen.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main_banking-auszahlen {
+    position: absolute;
+
+    bottom: 0.0926vmin;
+    left: 0.0417vmin;
+
+    width: 9.8148vmin;
+    height: 8.2407vmin;
+
+    background-image: url(../svg/banking/auszahlen.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main_banking-transact {
+    position: absolute;
+
+    top: 0.7407vmin;
+    left: 0.9259vmin;
+
+    width: 8.7963vmin;
+    height: 7.037vmin;
+
+    background-image: url(../svg/banking/transaction.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main_banking-input {
+    width: 20.3704vmin;
+    height: 4.1667vmin;
+
+    padding-left: 4.1852vmin;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 0.463vmin;
+    background: rgba(32, 159, 197, 0.1);
+    box-shadow: 0vmin 0.3704vmin 1.8519vmin 0vmin rgba(0, 0, 0, 0.50) inset;
+
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.3889vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_banking-field input {
+    width: 20.3704vmin;
+    height: 4.1667vmin;
+
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 0.463vmin;
+    background: rgba(32, 150, 197, 0.1);
+    box-shadow: 0vmin 0.3704vmin 1.8519vmin 0vmin rgba(0, 0, 0, 0.50) inset;
+
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.3889vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_banking-field input::placeholder {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.3889vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.3;
+}
+
+.main_banking-action button {
+    width: 26.3889vmin;
+    height: 4.1667vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: none;
+    border: none;
+    border-radius: 0.463vmin;
+    background: #093a41;
+    box-shadow: 0vmin 0vmin 1.3889vmin 0vmin rgba(0, 195, 255, 0.50) inset;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.4815vmin;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.main_banking-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9259vmin;
+}
+
+.main_banking-field-trans {
+    position: relative;
+
+    width: 40.463vmin;
+    height: 8.4259vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.463vmin;
+
+    border-radius: 0.463vmin;
+    background: rgba(32, 159, 197, 0.04);
+}
+
+.main_banking-field-trans input {
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 0.463vmin;
+    background: rgba(32, 172, 197, 0.1);
+    box-shadow: 0vmin 0.3704vmin 1.8519vmin 0vmin rgba(0, 0, 0, 0.50) inset;
+
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.3889vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_banking-field-trans input:nth-child(2) {
+    width: 18.1481vmin;
+    height: 4.1667vmin;
+}
+
+.main_banking-field-trans input:nth-child(3) {
+    width: 13.7963vmin;
+    height: 4.2593vmin;
+}
+
+.main_banking-field-trans input::placeholder {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.3889vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.3;
+}
+
+.main_banking-button button {
+    width: 40.463vmin;
+    height: 4.1667vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: none;
+    border: none;
+    border-radius: 0.463vmin;
+    background: #093941;
+    box-shadow: 0vmin 0vmin 1.3889vmin 0vmin rgba(0, 195, 255, 0.50) inset;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.4815vmin;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.main_deathscreen {
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(5, 1, 1, 0.767);
+    color: white;
+}
+
+.main_deathscreen-logo {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    width: 10%;
+    height: auto;
+    z-index: 2;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    animation: heartbeat 2s infinite;
+}
+
+.main_deathscreen-background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main_deathscreen-background img {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.main_deathscreen-overlay {
+    mix-blend-mode: overlay;
+}
+
+.main_deathscreen-middle {
+    position: absolute;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_deathscreen-heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_deathscreen-heading span:first-child {
+    font-size: 2.08333vw;
+    font-family: 'Regular';
+    text-shadow: 0px 0px 2.5vw rgba(255, 255, 255, 0.50);
+}
+
+.main_deathscreen-heading span:last-child {
+    font-size: 5vw;
+    font-family: 'Black';
+    background: linear-gradient(180deg, #06a4ff 28.78%, #000 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.10417vw #069bff;
+    letter-spacing: -0.225vw;
+    text-shadow: 0px 0px 9.58333vw rgba(6, 176, 255, 0.75);
+    margin-top: -0.83333vw;
+}
+
+.main_deathscreen-info {
+    margin-top: 2.29167vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_deathscreen-lns {
+    width: 44.21875vw;
+    height: 7.13542vw;
+    animation: flicker 1s ease-in-out infinite;
+}
+
+.main_deathscreen-time {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_deathscreen-time span:first-child {
+    font-size: 1.66667vw;
+    font-family: 'SemiBold';
+    text-shadow: 0px 0px 3.75vw rgba(255, 255, 255, 0.50);
+}
+
+.main_deathscreen-time span:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.57292vw;
+    height: 3.22917vw;
+    font-size: 1.97917vw;
+    background-image: url(../img/deathscreen/bxtm.png);
+    background-size: 100%;
+    box-shadow: 0px 0px 4.32292vw 0px rgba(6, 155, 255, 0.35);
+    font-size: 1.66667vw;
+    font-family: 'ExtraBold';
+    color: rgba(0, 0, 0, 0.75);
+    letter-spacing: -0.08906vw;
+    margin-top: 0.83333vw;
+}
+
+.main_deathscreen-buttons {
+    position: absolute;
+    bottom: 7.29167vw;
+    display: flex;
+}
+
+.main_deathscreen-box {
+    font-size: 1.45833vw;
+    font-family: 'ExtraBold';
+    color: rgba(0, 0, 0, 0.75);
+    width: 2.13542vw;
+    height: 2.13542vw;
+    border-radius: 0.05208vw;
+    background-image: url(../img/deathscreen/btn.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 3.75vw 0px rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_deathscreen-button span {
+    margin-left: 0.625vw;
+    font-size: 1.04167vw;
+    font-family: 'Bold';
+    letter-spacing: -0.04688vw;
+    text-shadow: 0px 0px 2.44792vw rgba(255, 255, 255, 0.75);
+}
+
+.main_deathscreen-button {
+    margin-left: 1.25vw;
+    display: flex;
+    align-items: center;
+}
+
+.main_deathscreen-button:first-child {
+    margin-left: 0;
+}
+
+@media (min-width: 2560px) {
+    .main_deathscreen-heading span:first-child {
+        font-size: 3.7037vh;
+        font-family: 'Regular';
+        text-shadow: 0vw 0vw 4.4444vh rgba(255, 255, 255, 0.50);
+    }
+
+    .main_deathscreen-heading span:last-child {
+        font-size: 8.8889vh;
+        font-family: 'Black';
+        background: linear-gradient(180deg, #06a4ff 28.78%, #000 90%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0.1852vh #06a4ff;
+        letter-spacing: -0.4vh;
+        text-shadow: 0vw 0vw 17.037vh rgba(6, 176, 255, 0.75);
+        margin-top: -1.4815vh;
+    }
+
+    .main_deathscreen-time {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_deathscreen-time span:first-child {
+        font-size: 2.963vh;
+        font-family: 'SemiBold';
+        text-shadow: 0vw 0vw 6.6667vh rgba(255, 255, 255, 0.50);
+    }
+
+    .main_deathscreen-time span:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 9.9074vh;
+        height: 5.7407vh;
+        font-size: 3.5185vh;
+        background-image: url(../img/deathscreen/bxtm.png);
+        background-size: 100%;
+        box-shadow: 0vw 0vw 7.6852vh 0vw rgba(6, 176, 255, 0.35);
+        font-size: 2.963vh;
+        font-family: 'ExtraBold';
+        color: rgba(0, 0, 0, 0.75);
+        letter-spacing: -0.1583vh;
+        margin-top: 1.4815vh;
+    }
+
+    .main_deathscreen-lns {
+        width: 78.6111vh;
+        height: 12.6852vh;
+        animation: flicker 1s ease-in-out infinite;
+    }
+
+    .main_deathscreen-info {
+        margin-top: 4.0741vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main_deathscreen-buttons {
+        position: absolute;
+        bottom: 12.963vh;
+        display: flex;
+    }
+
+    .main_deathscreen-box {
+        font-size: 2.5926vh;
+        font-family: 'ExtraBold';
+        color: rgba(0, 0, 0, 0.75);
+        width: 3.7963vh;
+        height: 3.7963vh;
+        border-radius: 0.0926vh;
+        background-image: url(../img/deathscreen/btn.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: 0vw 0vw 6.6667vh 0vw rgba(255, 255, 255, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main_deathscreen-button span {
+        margin-left: 1.1111vh;
+        font-size: 1.8519vh;
+        font-family: 'Bold';
+        letter-spacing: -0.0833vh;
+        text-shadow: 0vw 0vw 4.3519vh rgba(255, 255, 255, 0.75);
+    }
+
+    .main_deathscreen-button {
+        margin-left: 2.2222vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .main_deathscreen-button:first-child {
+        margin-left: 0;
+    }
+}
+
+@keyframes flicker {
+    from {
+        opacity: 0.02;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.02;
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.main_headbag {
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+.main_headbag img {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main_fuel {
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_fuel-container {
+    padding: 3.2407vmin;
+
+    width: 34.7222vmin;
+    height: 46.8519vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 1.8519vmin;
+    background: radial-gradient(105.23% 48.5% at 11.53% 87.18%, rgba(0, 195, 255, 0.08) 0%, rgba(0, 195, 255, 0.00) 100%), radial-gradient(55.5% 44.91% at 82.91% 24.28%, rgba(0, 195, 255, 0.07) 0%, rgba(0, 195, 255, 0.00) 100%), #010403;
+}
+
+.main_fuel-heading {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_fuel-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main_fuel-header h1 {
+    color: #FFF;
+    text-shadow: 0vmin 0vmin 0.463vmin rgba(255, 255, 255, 0.50);
+    font-family: Montserrat;
+    font-size: 2.2222vmin;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.1111vmin;
+    text-transform: uppercase;
+}
+
+.main_fuel-header h2 {
+    color: #FFF;
+    text-shadow: 0vmin 0.3704vmin 0.3704vmin rgba(0, 0, 0, 0.50);
+    font-family: Montserrat;
+    font-size: 1.1111vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0333vmin;
+    text-transform: uppercase;
+}
+
+.main_fuel-heading img {
+    width: 2.5926vmin;
+    height: 2.5926vmin;
+    cursor: pointer;
+}
+
+.main_fuel-pillars {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_fuel-pillar {
+    position: relative;
+
+    width: 6.0185vmin;
+    height: 6.4815vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.2778vmin;
+    border: 0.0463vmin solid rgba(0, 195, 255, 0.30);
+    background: rgba(0, 195, 255, 0.02);
+
+    overflow: hidden;
+}
+
+.main_fuel-pillar img {
+    position: absolute;
+
+
+    width: 6.0185vmin;
+    height: 9.3519vmin;
+}
+
+.main_fuel-pillar span {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2.963vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.main_fuel-money {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_fuel-price {
+    width: 13.4259vmin;
+    height: 5.6481vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(32, 137, 197, 0.04);
+}
+
+.main_fuel-price h1 {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Montserrat;
+    font-size: 1.2037vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.main_fuel-price h2 {
+    color: #2DAC4B;
+    font-family: Montserrat;
+    font-size: 1.8519vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.main_fuel-fuel {
+    padding-inline: 1.8519vmin;
+
+    width: 28.2407vmin;
+    height: 3.7037vmin;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(32, 145, 197, 0.04);
+}
+
+.main_fuel-fuel h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.2037vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.main_fuel-fuel span {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.2037vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.main_fuel-fuel span span {
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Montserrat;
+    font-size: 1.1111vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.main_fuel-navigation {
+    padding: 1.4815vmin;
+
+    width: 28.2407vmin;
+    height: 7.4074vmin;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(32, 178, 197, 0.04);
+}
+
+.main_fuel-infos {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main_fuel-infos h1 {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0vmin 0vmin 0.9259vmin rgba(255, 255, 255, 0.50);
+    font-family: Montserrat;
+    font-size: 1.2037vmin;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main_fuel-infos h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.2037vmin;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_fuel-infos h3 {
+    color: #00c3ff;
+    text-align: center;
+    text-shadow: 0vmin 0vmin 0.9259vmin rgba(0, 195, 255, 0.50);
+    font-family: Montserrat;
+    font-size: 1.2037vmin;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main_fuel-navigation img {
+    width: 7.4074vmin;
+    height: 7.4074vmin;
+}
+
+.main_fuel-container button {
+    width: 28.2407vmin;
+    height: 3.7037vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: none;
+    border: none;
+    border-radius: 0.463vmin;
+    background: #092f41;
+    box-shadow: 0vmin 0vmin 2.7778vmin 0vmin rgba(0, 195, 255, 0.50) inset;
+    cursor: pointer;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.2037vmin;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}

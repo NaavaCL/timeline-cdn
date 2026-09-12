@@ -1,0 +1,30 @@
+:root {
+    --background: rgba(25, 46, 52, 0.92) 0%, rgba(25, 46, 52, 0.92);
+
+    /* Title */
+    --title-color: #FFF;
+    --title-shadow: rgba(255, 255, 255, 0.40);
+    --subtitle-color: rgba(255, 255, 255, 0.32);
+    --subtitle-shadow: rgba(0, 0, 0, 0.48);
+
+    /* Shadows */
+    --shadow-left: #33E7FF;
+    --shadow-right: #31FFCE;
+
+    /* Buttons */
+    --button-yes-color: #31cfff;
+    --button-yes-shadow: rgba(49, 214, 255, 0.56);
+    --button-no-color: #ff0909;
+    --button-no-shadow: rgba(214, 31, 31, 0.56);
+
+    /* Text */
+    --text-color: #FFF;
+    --text-shadow: rgba(0, 0, 0, 0.48);
+
+    /* image */
+    --ring-color: #FFF;
+
+    /* Fonts */
+    --Collonse-font: Collonse Bold;
+    --Gilroy-font: Gilroy-SemiBold;
+}

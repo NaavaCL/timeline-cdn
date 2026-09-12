@@ -1,0 +1,388 @@
+#fishing_container {
+    width: 56vw;
+    height: 40vw;
+    font-family: 'Arame', sans-serif !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+#script-content-area {
+    margin-top: 1vw;
+    height: 25vw;
+    overflow-y: auto;
+}
+
+/* HEADER STATS & PROFILE CARD */
+.description_area {
+    margin-top: 0.8vw;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 0.8vw;
+    gap: 1.5vw;
+    font-family: 'Arame', sans-serif !important;
+}
+
+.profile_card {
+    gap: 0.8vw;
+    min-width: 14vw;
+}
+
+.avatar_ring {
+    width: 2.8vw;
+    height: 2.8vw;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1B70DE 0%, #0B99FF 100%);
+    padding: 0.12vw;
+    box-shadow: none !important;
+}
+
+.avatar_ring img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.1vw solid rgba(0,0,0,0.5);
+}
+
+.profile_info .name {
+    font-size: 0.9vw;
+    font-family: 'Arame', sans-serif !important;
+    color: white;
+    text-transform: uppercase;
+}
+
+.rank_badge {
+    margin-top: 0.2vw;
+    background: rgba(11, 153, 255, 0.1);
+    border: 1px solid rgba(11, 153, 255, 0.3);
+    border-radius: 0.2vw;
+    padding: 0.15vw 0.4vw;
+    gap: 0.3vw;
+}
+
+.rank_badge i {
+    font-size: 0.6vw;
+    color: var(--accent);
+}
+
+.rank_badge span {
+    font-size: 0.65vw;
+    font-family: 'Arame', sans-serif !important;
+    color: rgba(255,255,255,0.85);
+    text-transform: uppercase;
+}
+
+.level_progress {
+    flex: 1;
+    gap: 0.8vw;
+    font-family: 'Arame', sans-serif !important;
+}
+
+.lvl_label {
+    font-size: 0.85vw;
+    font-family: 'Arame', sans-serif !important;
+    color: var(--accent);
+}
+
+.xp_bar_container {
+    height: 0.4vw;
+    background: rgba(255, 255, 255, 0.08);
+    flex: 1;
+    max-width: 12vw;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+
+.xp_bar_fill {
+    background: linear-gradient(90deg, #1B70DE 0%, #0B99FF 100%);
+    box-shadow: none !important;
+    height: 100%;
+}
+
+.xp_text {
+    font-size: 0.75vw;
+    font-family: 'Arame', sans-serif !important;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header_stats {
+    gap: 1vw;
+    font-family: 'Arame', sans-serif !important;
+}
+
+.mini_stat {
+    align-items: flex-end;
+}
+
+.mini_stat .label {
+    font-size: 0.6vw;
+    font-family: 'Arame', sans-serif !important;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 0.05vw;
+}
+
+.mini_stat .value {
+    font-size: 1vw;
+    font-family: 'Arame', sans-serif !important;
+    color: #0B99FF;
+}
+
+/* NAVIGATION */
+.underHeader_nav {
+    margin-top: 0.8vw;
+    padding-bottom: 0.5vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    gap: 0.8vw;
+    font-family: 'Arame', sans-serif !important;
+}
+
+.nav {
+    padding: 0.5vw 1vw;
+    font-family: 'Arame', sans-serif !important;
+    font-size: 0.8vw;
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+    border: 1px solid transparent;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.nav:hover {
+    background: rgba(27, 112, 222, 0.2);
+    border-color: rgba(11, 153, 255, 0.3);
+    color: #ffffff;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.selected_nav {
+    color: white;
+    background: linear-gradient(268deg, rgba(27, 112, 222, 0.6) -20%, rgba(0, 0, 0, 0.2) 53%, rgba(27, 112, 222, 0.6) 127%);
+    box-shadow: none !important;
+    border: 1px solid rgba(11, 153, 255, 0.8);
+}
+
+/* GRIDS & FISH CARDS */
+.fishing_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1vw;
+    padding-right: 0.5vw;
+}
+
+.fish_card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    padding: 0.8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.15s ease, border-color 0.15s ease;
+    position: relative;
+    font-family: 'Arame', sans-serif !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.fish_card:hover {
+    border-color: rgba(11, 153, 255, 0.4);
+    background: rgba(27, 112, 222, 0.15);
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.fish_price_tag {
+    position: absolute;
+    top: 0.5vw;
+    right: 0.5vw;
+    background: rgba(11, 153, 255, 0.15);
+    color: #0B99FF;
+    padding: 0.15vw 0.4vw;
+    border-radius: 2px;
+    font-size: 0.75vw;
+    font-family: 'Arame', sans-serif !important;
+    border: 1px solid rgba(11, 153, 255, 0.3);
+}
+
+.fish_image {
+    height: 5.5vw;
+    margin: 0.8vw 0;
+    object-fit: contain;
+    filter: drop-shadow(0 0.3vw 0.6vw rgba(0, 0, 0, 0.5));
+}
+
+.fish_name {
+    font-size: 0.85vw;
+    font-family: 'Arame', sans-serif !important;
+    text-align: center;
+    margin-bottom: 0.8vw;
+    color: #ffffff;
+}
+
+/* CARD ACTIONS (SHOP/SELL) */
+.card_actions {
+    width: 100%;
+    gap: 0.5vw;
+}
+
+.amount_stepper {
+    width: 100%;
+    height: 2vw;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5vw;
+    font-size: 0.8vw;
+    font-family: 'Arame', sans-serif !important;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stepper_btn {
+    cursor: pointer;
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.15s ease;
+    transform: none !important;
+}
+
+.stepper_btn:hover {
+    color: var(--accent);
+    transform: none !important;
+}
+
+.btn_united {
+    width: 100%;
+    height: 2.2vw;
+    background: linear-gradient(268deg, rgba(27, 112, 222, 0.6) -20%, rgba(0, 0, 0, 0.2) 53%, rgba(27, 112, 222, 0.6) 127%);
+    border: 1px solid rgba(11, 153, 255, 0.6);
+    color: white;
+    font-size: 0.8vw;
+    font-family: 'Arame', sans-serif !important;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: none !important;
+    transition: filter 0.15s ease;
+    transform: none !important;
+}
+
+.btn_united:hover {
+    filter: brightness(1.15);
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+.btn_united:active {
+    filter: brightness(0.9);
+    transform: none !important;
+}
+
+/* LEADERBOARD */
+.leaderboard_table {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arame', sans-serif !important;
+}
+
+.leaderboard_header {
+    background: rgba(27, 112, 222, 0.15);
+    padding: 0.8vw 1vw;
+    font-size: 0.75vw;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.05vw;
+    border-bottom: 1px solid rgba(11, 153, 255, 0.3);
+    font-family: 'Arame', sans-serif !important;
+}
+
+.leaderboard_row {
+    padding: 0.8vw 1vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    font-size: 0.8vw;
+    font-family: 'Arame', sans-serif !important;
+}
+
+.leaderboard_row:nth-child(even) { background: rgba(255, 255, 255, 0.02); }
+
+/* Column Widths for Alignment */
+.leaderboard_header span, .leaderboard_row > span, .leaderboard_row div {
+    text-align: left;
+}
+
+.rank { width: 3vw; flex: none !important; color: var(--accent); }
+.name { width: 12vw; flex: none !important; }
+.sold { width: 6vw; flex: none !important; }
+.lvl { width: 6vw; flex: none !important; }
+.xp { width: 8vw; flex: none !important; }
+.income { width: 8vw; flex: none !important; color: #0B99FF; }
+
+/* MINIGAME HUD */
+#fishing_hud {
+    position: absolute;
+    bottom: 5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    font-family: 'Arame', sans-serif !important;
+}
+
+.minigame_container {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(11, 153, 255, 0.4);
+    border-bottom: 0.2vw solid var(--accent);
+    padding: 1.5vw 2.5vw;
+    border-radius: 6px;
+    box-shadow: 0 1vw 3vw rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2vw;
+}
+
+.minigame_text .key {
+    font-size: 2vw;
+    font-family: 'Arame', sans-serif !important;
+    color: var(--accent);
+    margin: 0.2vw 0;
+}
+
+.minigame_text .instruction {
+    font-size: 0.8vw;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.1vw;
+    font-family: 'Arame', sans-serif !important;
+}
+
+.minigame_bar {
+    width: 20vw;
+    height: 0.6vw;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 1vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.minigame_target {
+    position: absolute;
+    height: 100%;
+    background: rgba(11, 153, 255, 0.4);
+    border-left: 1px solid rgba(11, 153, 255, 0.8);
+    border-right: 1px solid rgba(11, 153, 255, 0.8);
+}
+
+.minigame_line {
+    position: absolute;
+    height: 100%;
+    width: 0.2vw;
+    background: white;
+    left: 0;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 0.25vw; }
+::-webkit-scrollbar-thumb { background: rgba(11, 153, 255, 0.5); border-radius: 1vw; }
+::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.2); }

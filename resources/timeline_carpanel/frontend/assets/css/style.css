@@ -1,0 +1,762 @@
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: "ArameMono", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    padding-bottom: 3.125vw; /* 60px */
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.25vmax;
+  height: 0.25vmax;
+}
+
+::-webkit-scrollbar-track {
+  background: #2a2a2a;
+  border-radius: 0.25vmax;
+  margin-left: 0.5vmax;
+  top: 0.5vmax;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #00317b 0%, #006eff 100%);
+  border-radius: 0.25vmax;
+}
+
+.main_wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    border-radius: 0.26vw;
+    width: 52.917vw; /* 1016px */
+    height: 16.042vw; /* 308px */
+    align-self: flex-end;
+    overflow: hidden;
+    border-left: 0.078vw solid #0059ff;
+    box-shadow: 0 0 1.667vw rgba(0, 102, 255, 0.15);
+
+    background: radial-gradient(
+        23.35% 117.51% at 44.98% 33.91%,
+        rgba(0, 40, 80, 0.6) 0%,
+        rgba(0, 20, 50, 0.9) 50%,
+        rgba(0, 0, 0, 0.95) 100%
+    );
+}
+
+.vehicle_informations_wrapper {
+    position: relative;
+    padding: 1.354vw 2.812vw; /* 26px 54px */
+    width: 10.417vw; /* 200px */
+    z-index: 1;
+}
+
+.vehicle_informations_wrapper::before {
+    content: "";
+    position: absolute;
+    width: 28.229vw; /* 542px */
+    height: 28.229vw; /* 542px */
+    background: rgba(0, 102, 255, 0.08);
+    border-radius: 50%;
+    filter: blur(4.688vw); /* 90px */
+    left: -10.417vw; /* -200px */
+    top: -15.625vw; /* -300px */
+}
+
+.vehicle_informations_wrapper::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/splash_detail.png");
+    width: 5.365vw; /* 103px */
+    height: 8.438vw; /* 162px */
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+}
+
+.vehicle_informations_content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.823vw; /* 35px */
+}
+
+.headline_container .description {
+    font-family: "BrushScript";
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25vw; /* 24px */
+    line-height: 0.104vw; /* 2px */
+    margin-left: 0.26vw; /* 5px */
+}
+
+.headline_container .headline {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.042vw; /* 20px */
+    font-weight: 900;
+    text-shadow: 0 0 1.66667vw rgba(255, 255, 255, 0.25);
+}
+
+.headline_container {
+    display: flex;
+    align-items: center;
+    gap: 0.313vw;
+}
+
+.headline_container .headline_row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.104vw;
+}
+
+.vehicle_informations {
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.625vw; /* 12px */
+    flex-grow: 1;
+}
+
+
+.fuel_display {
+    display: grid;
+    align-items: flex-end;
+    position: relative;
+    border-radius: 0.156vw; /* 3px */
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%);
+    border: 0.052vw solid rgba(255, 255, 255, 0.1);
+    width: 2.396vw; /* 46px */
+    height: 10.571vw; /* 178px */
+    overflow: hidden;
+    font-size: 0.781vw; /* 15px */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.fuel_display .fuel_value {
+    position: absolute;
+    width: 100%;
+    margin-bottom: 1.198vw; /* 23px */
+}
+
+.fuel_display .fuel_value .fuel_unit {
+    font-size: 0.625vw; /* 12px */
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.fuel_display .fuel_progress {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #006eff 0%, #00317b 100%);
+    box-shadow: 0 0 0.625vw rgba(0, 110, 255, 0.35);
+}
+
+.fuel_display .fuel_progress::after {
+    content: "";
+    position: absolute;
+    top: -1.146vw; /* -22px */
+    height: 1.146vw; /* 22px */
+    width: 100%;
+    background-image: url("../images/fuel_detail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.vehicle_control {
+    display: grid;
+    gap: 0.417vw; /* 8px */
+    grid-template-rows: repeat(5, 1.771vw); /* 34px */
+    width: 1.771vw; /* 34px */
+    flex-shrink: 0;
+}
+
+.vehicle_control .control_button {
+    cursor: pointer;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.35) 0%,
+        rgba(0, 0, 0, 0.35) 100%
+    );
+    border: 0.052vw solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.156vw; /* 3px */
+    color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    place-content: center;
+    transition: all 0.3s ease;
+}
+
+.vehicle_control .control_button:hover {
+    border-color: rgba(0, 102, 255, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.vehicle_control .control_button svg {
+    width: 1.042vw;
+    height: 1.042vw;
+    object-fit: contain;
+}
+
+.vehicle_control .control_button.active {
+    color: white;
+    background: linear-gradient(90deg, #00317b 0%, #006eff 100%);
+    border: 0.052vw solid #0059ff;
+    box-shadow: 0 0 0.625vw rgba(0, 110, 255, 0.45), inset 0 0 0.938vw rgba(0, 110, 255, 0.2);
+}
+
+.vehicle_display_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/road_detail.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.vehicle_display_wrapper .button_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* 2 vorne, 2 hinten - Sitzanordnung wie im Auto */
+.vehicle_display_wrapper .button_wrapper.seat_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5vw;
+    place-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    padding: 0.8vw;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0.26vw;
+    border: 0.052vw solid rgba(255, 255, 255, 0.1);
+}
+ 
+.vehicle_display_wrapper .button_wrapper .vehicle_door_control {
+    position: absolute;
+    width: 1.458vw; /* 28px */
+    height: 1.458vw; /* 28px */
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%);
+    border: 0.052vw solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.208vw; /* 4px */
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease;
+}
+
+.vehicle_display_wrapper .button_wrapper .vehicle_door_control:hover {
+    border-color: rgba(0, 102, 255, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.vehicle_display_wrapper .button_wrapper .vehicle_door_control.engine_hood {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.042vw; /* 20px */
+}
+
+/* Absolute Positionierung nur wenn kein seat_grid */
+.vehicle_display_wrapper .button_wrapper:not(.seat_grid) .vehicle_door_control.door_front_right {
+    right: 23%;
+    top: 2.083vw;
+}
+.vehicle_display_wrapper .button_wrapper:not(.seat_grid) .vehicle_door_control.door_front_left {
+    left: 23%;
+    top: 2.083vw;
+}
+.vehicle_display_wrapper .button_wrapper:not(.seat_grid) .vehicle_door_control.door_back_right {
+    right: 15%;
+    top: 6.771vw;
+}
+.vehicle_display_wrapper .button_wrapper:not(.seat_grid) .vehicle_door_control.door_back_left {
+    left: 15%;
+    top: 6.771vw;
+}
+
+/* seat_grid: Position zurücksetzen für Grid-Layout */
+.vehicle_display_wrapper .button_wrapper.seat_grid .vehicle_door_control {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+}
+.vehicle_display_wrapper .button_wrapper .vehicle_door_control.trunk {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1.042vw; /* 20px */
+}
+
+.vehicle_display_wrapper .button_wrapper .vehicle_door_control::after {
+    content: "";
+    position: absolute;
+    width: 0.313vw; /* 6px */
+    height: 0.313vw; /* 6px */
+    background-color: rgba(255, 255, 255, 0.4);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.625vw; /* -12px */
+    border-radius: 50%;
+}
+
+.vehicle_display_wrapper .button_wrapper .vehicle_door_control.active {
+    color: white;
+    background: linear-gradient(90deg, #00317b 0%, #006eff 100%);
+    border: 0.052vw solid #0059ff;
+    box-shadow: 0 0 0.625vw rgba(0, 110, 255, 0.45), inset 0 0 0.938vw rgba(0, 110, 255, 0.2);
+}
+
+.active {
+    color: white;
+    background: linear-gradient(90deg, #00317b 0%, #006eff 100%);
+    border: 0.052vw solid #0059ff;
+    box-shadow: 0 0 0.625vw rgba(0, 110, 255, 0.45);
+}
+
+.vehicle_display_wrapper .button_wrapper .vehicle_door_control.active::after {
+    background: rgba(0, 102, 255, 0.63);
+    border: 0.052vw solid #0066ff;
+    box-shadow: 0 0 0.156vw rgba(0, 102, 255, 0.5);
+}
+
+.vehicle_display_wrapper .button_wrapper .vehicle_door_control svg {
+    width: 65%;
+    height: 65%;
+    object-fit: contain;
+}
+
+.vehicle_display_wrapper .vehicle_display_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.vehicle_display_wrapper .vehicle_display_container .vehicle_image {
+    width: 19vw;
+    object-fit: contain;
+}
+
+.vehicle_display_wrapper .gear_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.771vw; /* 34px */
+    font-size: 0.781vw; /* 15px */
+    color: rgba(255, 255, 255, 0.5);
+    width: 12.755vw; /* 245px */
+    background: linear-gradient(
+        90deg,
+        rgba(0, 102, 255, 0) 0%,
+        rgba(0, 110, 255, 0.4) 50%,
+        rgba(0, 102, 255, 0) 100%
+    );
+}
+
+.vehicle_display_wrapper .gear_wrapper .gear {
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 1.198vw; /* 23px */
+}
+
+.vehicle_display_wrapper .gear_wrapper .gear.active {
+    width: 1.823vw; /* 35px */
+}
+.vehicle_display_wrapper .gear_wrapper .gear.active::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 1.823vw; /* 35px */
+    height: 1.667vw; /* 32px */
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" fill="none"><path fill="%230066ff" fill-opacity=".9" d="M24.25 31a.5.5 0 0 0 0 1H31a4 4 0 0 0 4-4v-5h-1.25v4a4 4 0 0 1-4 4h-5.5ZM1.25 23H0v5a4 4 0 0 0 4 4h6.75a.5.5 0 0 0 0-1h-5.5a4 4 0 0 1-4-4v-4ZM10.75 0a.5.5 0 0 1 0 1h-5.5a4 4 0 0 0-4 4v18H0V4a4 4 0 0 1 4-4h6.75ZM24.25 0a.5.5 0 0 0 0 1h5.5a4 4 0 0 1 4 4v18H35V4a4 4 0 0 0-4-4h-6.75Z"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    filter: drop-shadow(0 0 0.208vw rgba(0, 102, 255, 0.5));
+}
+
+.music_player_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 18.229vw; /* 350px */
+    padding: 2.708vw 2.813vw 1.354vw 2.083vw; /* 52px 54px 26px 40px */
+}
+
+.current_song_wrapper {
+}
+
+.current_song {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.573vw; /* 11px */
+
+   
+
+   
+
+   
+
+   
+
+   
+}
+
+.current_song .song_artist {
+    width: 2.188vw; /* 42px */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.365vw; /* 7px */
+    color: rgba(255, 255, 255, 0.5);
+}
+.current_song .song_progress_wrapper {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.current_song .time_progress {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.8);
+}
+.current_song .progress_container {
+    margin-top: 0.156vw; /* 3px */
+    height: 0.104vw; /* 2px */
+    background-color: rgba(217, 217, 217, 0.3);
+}
+
+.current_song .progress_container .progress {
+    position: relative;
+    background: linear-gradient(90deg, #00317b 0%, #006eff 100%);
+    box-shadow: 0 0 0.417vw rgba(0, 110, 255, 0.35);
+    height: 100%;
+}
+
+
+.current_song .song_informations {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.729vw; /* 14px */
+    padding: 0.573vw 0.729vw; /* 11px 14px */
+    align-items: center;
+    color: white;
+    font-size: 0.417vw; /* 8px */
+    font-weight: 500;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%);
+    border: 0.052vw solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.156vw; /* 3px */
+}
+
+.current_song .song_cover {
+    width: 2.552vw; /* 49px */
+    height: 2.552vw; /* 49px */
+    object-fit: contain;
+    border-radius: 0.156vw; /* 3px */
+}
+
+.current_song .song_cover1 {
+    width: 2.552vw; /* 49px */
+    height: 2.552vw; /* 49px */
+    object-fit: contain;
+    border-radius: 0.156vw; /* 3px */
+}
+
+.song_navigation_wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.885vw; /* 17px */
+    align-items: center;
+    margin-top: 0.417vw; /* 8px */
+
+    
+
+   
+
+   
+}
+
+.song_navigation_wrapper .song_navigation {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%);
+    border: 0.052vw solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.156vw; /* 3px */
+    width: 1.094vw; /* 21px */
+    height: 1.094vw; /* 21px */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.song_navigation_wrapper .song_navigation:hover {
+    border-color: rgba(0, 102, 255, 0.5);
+    box-shadow: 0 0 0.417vw rgba(0, 110, 255, 0.3);
+}
+.song_navigation_wrapper .sound_control_container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    height: 100%;
+    gap: 0.521vw; /* 10px */
+}
+
+.song_navigation_wrapper .navigation_container {
+    display: flex;
+    gap: 0.26vw;
+}
+
+.add_song_wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.417vw; /* 8px */
+    margin-top: 0.625vw; /* 12px */
+
+   
+   
+}
+
+.add_song_wrapper .input {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding-left: 0.573vw; /* 11px */
+    width: 11.25vw; /* 216px */
+    height: 1.458vw; /* 28px */
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%);
+    border: 0.052vw solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.156vw; /* 3px */
+    transition: all 0.3s ease;
+}
+
+.add_song_wrapper .input:focus-within {
+    border-color: rgba(0, 102, 255, 0.5);
+    box-shadow: 0 0 0.417vw rgba(0, 110, 255, 0.2);
+}
+.add_song_wrapper .input .spotify_icon {
+    width: 0.625vw;
+    height: 0.625vw;
+    object-fit: cover;
+}
+.add_song_wrapper .input input {
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 0 0.573vw 0 0.417vw; /* 0 11px 0 8px */
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.521vw; /* 10px */
+}
+.add_song_wrapper .input input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+.add_song_wrapper .add_song_button {
+    width: 1.458vw; /* 28px */
+    height: 1.458vw; /* 28px */
+    cursor: pointer;
+    background: linear-gradient(90deg, #00317b 0%, #006eff 100%);
+    border: 0.052vw solid #0059ff;
+    border-radius: 0.156vw; /* 3px */
+    font-size: 1.042vw; /* 20px */
+    color: #001440;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.add_song_wrapper .add_song_button:hover {
+    transform: translateY(0.1vw);
+    box-shadow: inset 0 0 0.938vw rgba(0, 110, 255, 0.55), 0 0 0.677vw rgba(0, 81, 255, 0.23);
+}
+
+.add_song_wrapper .add_song_button:active {
+    opacity: 0.85;
+}
+
+.song_list_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.521vw; /* 10px */
+}
+
+.song_list_wrapper .song_list {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 3.385vw; /* 65px */
+    padding-right: 0.625vw; /* 12px */
+    margin-top: 0.365vw; /* 7px */
+}
+
+.song_list_wrapper .headline {
+    font-size: 0.521vw; /* 10px */
+    font-family: "ArameMono";
+    color: white;
+    text-shadow: 0 0 1.25vw rgba(255, 255, 255, 0.35);
+}
+.song_list_wrapper .song {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 0.313vw; /* 6px */
+    cursor: pointer;
+}
+
+.song_list_wrapper .song .delete_song_button {
+    background-color: rgba(0, 0, 0, 0.28);
+    border-radius: 0.156vw; /* 3px */
+    width: 1.6vw; /* 20px */
+    border: 3px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.song_list_wrapper .song .listed_song_informations {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%);
+    border: 0.052vw solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.156vw; /* 3px */
+    display: grid;
+    align-items: center;
+    padding-left: 0.469vw; /* 9px */
+    font-size: 0.417vw; /* 8px */
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.song_list_wrapper .song:not(:last-child) {
+    margin-bottom: 0.208vw; /* 4px */
+}
+.song_list_wrapper .song .song_cover {
+    width: 1.354vw; /* 26px */
+    height: 1.354vw; /* 26px */
+    object-fit: contain;
+    border-radius: 0.156vw; /* 3px */
+}
+.song_list_wrapper .song .song_cover1 {
+    width: 1.354vw; /* 26px */
+    height: 1.354vw; /* 26px */
+    object-fit: contain;
+    border-radius: 0.156vw; /* 3px */
+}
+
+
+.control_icon {
+    width: 0.52vw;
+    height: 0.52vw;
+    object-fit: contain;
+}
+
+.range-input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    height: 0.104vw; /* 2px */
+    background-color: #d9d9d980;
+}
+
+.range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 0.417vw; /* 8px */
+    width: 0.208vw; /* 4px */
+    background: linear-gradient(90deg, #00317b 0%, #006eff 100%);
+    border-radius: 1px;
+    border: none;
+    box-shadow: 0 0 0.313vw rgba(0, 110, 255, 0.4);
+    transition: 0.2s ease-in-out;
+}
+
+.range-input::-moz-range-thumb {
+    height: 0.417vw; /* 8px */
+    width: 0.208vw; /* 4px */
+    background: linear-gradient(90deg, #00317b 0%, #006eff 100%);
+    border-radius: 1px;
+    border: none;
+    box-shadow: 0 0 0.313vw rgba(0, 110, 255, 0.4);
+    transition: 0.2s ease-in-out;
+}
+
+.plate-text {
+    position: absolute;
+    bottom: 4.92vmax;
+    font-family: "ArameMono";
+    font-weight: bold;
+    font-size: 0.5vmax;
+    text-align: center;
+    text-shadow: 0 0 0.417vw rgba(0, 110, 255, 0.35);
+}
+
+/* Banking-style dot accent */
+.dot {
+    border: 0.052vw solid #0066ff;
+    border-radius: 0.052vw;
+    width: 0.469vw;
+    height: 0.469vw;
+    box-shadow: 0 0 0.156vw rgba(0, 102, 255, 0.25);
+    background: rgba(0, 102, 255, 0.63);
+}
+
+@keyframes slideToTop {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideToBottom {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.yt1 {
+    position: absolute;
+    top: -2.8vmax;
+    right: 2vmax;
+    width: 7vmax;
+}
+
+.yt2 {
+    position: absolute;
+    bottom: -0.5vmax;
+    right: -3vmax;
+    transform: rotate(25deg);
+    width: 7vmax;
+}
+
+.yt3 {
+    transform: rotate(10deg);
+    position: absolute;
+    bottom: -3vmax;
+    right: 15vmax;
+    width: 8vmax;
+}

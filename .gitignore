@@ -1,0 +1,11 @@
+# Never push secrets/server code into this public CDN repo
+*.lua
+*.sql
+*.cfg
+.env
+.env.*
+*secret*
+*token*
+*webhook*
+WaveShield/
+server/

@@ -1,0 +1,215 @@
+/* ============================================================
+   timeline_gym | Custom Styles & TimeLine Theme Integration
+   ============================================================ */
+
+.hidden {
+    display: none !important;
+}
+
+.status_badge {
+    padding: 0.25vw 0.6vw;
+    border-radius: 3px;
+    font-size: 0.75vw;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-family: 'Arame', sans-serif !important;
+}
+
+.status_badge.active {
+    background: rgba(0, 255, 136, 0.15);
+    border: 1px solid rgba(0, 255, 136, 0.5);
+    color: #00ff88;
+}
+
+.status_badge.inactive {
+    background: rgba(255, 60, 60, 0.15);
+    border: 1px solid rgba(255, 60, 60, 0.5);
+    color: #ff4444;
+}
+
+.gym_body {
+    display: flex;
+    gap: 1vw;
+    height: 100%;
+    font-family: 'Arame', sans-serif !important;
+}
+
+.nav_icon {
+    font-size: 0.9vw;
+    color: #ffffff;
+}
+
+.tab_panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vw;
+    width: 100%;
+}
+
+/* Gym Card */
+.gym_card {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.1));
+    border-radius: 4px;
+    padding: 1vw 1.2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vw;
+}
+
+.card_title {
+    font-size: 0.85vw;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.card_owner {
+    font-size: 0.85vw;
+    color: var(--accent, #0B99FF);
+}
+
+.xp_progress_container {
+    width: 100%;
+}
+
+.xp_bar_bg {
+    width: 100%;
+    height: 0.4vw;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 0.2vw;
+    overflow: hidden;
+}
+
+.xp_bar_fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff8c00, #ffd700);
+    border-radius: 0.2vw;
+    transition: width 0.6s ease;
+}
+
+/* Buy Section */
+.buy_section {
+    background: rgba(255, 140, 0, 0.08);
+    border: 1px solid rgba(255, 140, 0, 0.3);
+    border-radius: 4px;
+    padding: 0.8vw;
+}
+
+.buy_info_text {
+    font-size: 0.75vw;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+/* Member Benefits */
+.member_benefits {
+    background: rgba(0, 255, 136, 0.06);
+    border: 1px solid rgba(0, 255, 136, 0.3);
+    border-radius: 4px;
+    padding: 0.8vw;
+    gap: 0.3vw;
+}
+
+.active_tag {
+    font-size: 0.8vw;
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.benefit_desc {
+    font-size: 0.7vw;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Stations Grid */
+.stations_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6vw;
+}
+
+.station_item {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.08));
+    border-radius: 4px;
+    padding: 0.7vw 0.9vw;
+    gap: 0.8vw;
+}
+
+.station_icon {
+    font-size: 1.4vw;
+    color: #ff8c00;
+}
+
+.station_name {
+    font-size: 0.75vw;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.station_sub {
+    font-size: 0.65vw;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Leaderboard */
+.leaderboard_container {
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.1));
+    border-radius: 4px;
+    padding: 0.8vw 1vw;
+    gap: 0.5vw;
+    height: 100%;
+}
+
+.lb_header {
+    font-size: 0.75vw;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 0.4vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+}
+
+.lb_list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35vw;
+    max-height: 20vw;
+    overflow-y: auto;
+}
+
+.lb_row {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+    padding: 0.5vw 0.7vw;
+    font-size: 0.75vw;
+    align-items: center;
+}
+
+.lb_row:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.lb_rank {
+    font-weight: bold;
+    color: #ff8c00;
+}
+
+.lb_name {
+    color: #ffffff;
+}
+
+.lb_xp {
+    font-weight: bold;
+    color: #00ff88;
+    text-align: right;
+}
+
+.lb_empty {
+    text-align: center;
+    font-size: 0.8vw;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 2vw 0;
+}

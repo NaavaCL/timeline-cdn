@@ -1,0 +1,357 @@
+/*
+    TIMELINE - NAMECHANGE
+    1:1 auf Basis des TimeLine-Template-Systems (siehe timeline_lifeinvader Referenz)
+    Feste px-Werte statt vw-Skalierung, exakt gleiche Klassen/Variablen wie im Template.
+*/
+
+@font-face {
+    font-family: 'Arame';
+    src: url('../fonts/Arame.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --panel-width: 480px;
+    --panel-radius: 6px;
+    --accent: #0B99FF;
+    --close-bg: linear-gradient(180deg, #D40000 50%, #6E0000 133.33%);
+    --header-padding: 11px 16px 0 16px;
+    --content-padding: 20px;
+    --panel-image: url('../assets/images/bg.png');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    font-family: 'Arame', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+    background: transparent !important;
+}
+
+/* Main Container */
+.form {
+    position: relative;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: transparent !important;
+    pointer-events: none;
+}
+
+.form.show {
+    display: flex !important;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.panel {
+    position: relative;
+    width: var(--panel-width);
+    border-radius: var(--panel-radius);
+    overflow: hidden;
+
+    background: var(--panel-image) center / 100% 100% no-repeat;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #ffffff;
+    font-family: 'Arame', sans-serif;
+}
+
+/* -----------------------------
+   HEADER
+   ----------------------------- */
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: var(--header-padding);
+}
+
+.brand {
+    width: 135px;
+    margin-top: 1px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    text-align: center;
+}
+
+.brand-name {
+    font-family: 'Arame', sans-serif;
+    font-size: 32px;
+    line-height: 23px;
+    color: #ffffff;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.brand-sub {
+    font-family: 'Arame', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+    line-height: 11px;
+    color: rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+}
+
+.brand-sub::before,
+.brand-sub::after {
+    content: '';
+    width: 8px;
+    flex: 0 0 8px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.close {
+    flex-shrink: 0;
+
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--close-bg);
+    color: #ffffff;
+
+    transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+.close svg {
+    width: 11px;
+    height: 11px;
+    display: block;
+}
+
+.close:hover { filter: brightness(1.2); }
+.close:active { transform: scale(0.92); }
+
+/* -----------------------------
+   CONTENT
+   ----------------------------- */
+
+.content {
+    flex: 1;
+    padding: var(--content-padding);
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.description svg {
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.description span {
+    font-size: 12px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-group label {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.75);
+    text-transform: uppercase;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 2px;
+    padding: 10px 12px;
+
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.input-wrapper:focus-within {
+    border-color: rgba(11, 153, 255, 0.5);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.input-wrapper i {
+    font-size: 13px;
+    color: rgba(11, 153, 255, 0.8);
+}
+
+.input-wrapper input {
+    flex: 1;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.input-wrapper input::placeholder {
+    color: rgba(255, 255, 255, 0.18);
+}
+
+.check {
+    width: 13px;
+    height: 13px;
+    opacity: 0.8;
+    flex-shrink: 0;
+}
+
+.price-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin-top: 4px;
+
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+}
+
+.price-val {
+    color: var(--accent);
+    font-size: 14px;
+}
+
+/* -----------------------------
+   BUTTONS — 1:1 Template-Style
+   ----------------------------- */
+
+.confirm-btn {
+    position: relative;
+    width: 100%;
+    height: 34px;
+    margin-top: 18px;
+
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+
+    font-family: 'Arame', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+
+    background: linear-gradient(
+        268deg,
+        rgba(27, 112, 222, 0.5) -20%,
+        rgba(0, 0, 0, 0) 53%,
+        rgba(27, 112, 222, 0.5) 127%
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: filter 0.15s ease, transform 0.1s ease;
+}
+
+.confirm-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 2px;
+    padding: 1px;
+    pointer-events: none;
+
+    background: linear-gradient(
+        268deg,
+        rgba(27, 112, 222, 0.9) -20%,
+        rgba(27, 112, 222, 0.15) 53%,
+        rgba(27, 112, 222, 0.9) 127%
+    );
+
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+}
+
+.confirm-btn:hover { filter: brightness(1.3); }
+.confirm-btn:active { transform: scale(0.97); }
+
+/* -----------------------------
+   FOOTER
+   ----------------------------- */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px 16px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer span {
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+}
+
+/* -----------------------------
+   SCROLLBAR
+   ----------------------------- */
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.05); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }

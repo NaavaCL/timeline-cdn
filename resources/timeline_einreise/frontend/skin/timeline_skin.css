@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+    --timeline-accent: #FF2400;
+    --timeline-accent-dark: #801200;
+    --timeline-accent-deep: #570808;
+    --glow-color: #E32227;
+
+    --panel-bg: rgba(14, 11, 11, 0.95);
+    --card-bg: rgba(26, 20, 20, 0.7);
+    --card-border: rgba(255, 36, 0, 0.3);
+    --card-border-active: rgba(255, 36, 0, 0.9);
+}
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html, body, #app {
+    background: transparent !important;
+}
+
+input[type="range"] {
+    accent-color: #FF2400 !important;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background: #FF2400 !important;
+    box-shadow: none !important;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background: #FF2400 !important;
+    box-shadow: none !important;
+}
+
+button, input[type="button"], input[type="submit"] {
+    background: linear-gradient(to bottom, #FF2400 0%, #801200 100%) !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 0 15px rgba(255, 36, 0, 0.6) !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    border-radius: 6px !important;
+}
+
+button:hover, input[type="button"]:hover {
+    filter: brightness(1.25) !important;
+    box-shadow: 0 0 20px rgba(255, 36, 0, 0.85) !important;
+}

@@ -1,0 +1,16 @@
+@font-face { 
+    font-family: 'Bold';
+    src: url('../fonts/HalvarBreit-Bd.ttf') 
+}
+@font-face { 
+    font-family: 'Black';
+    src: url('../fonts/HalvarBreit-Blk.ttf') 
+}
+@font-face { 
+    font-family: 'Light';
+    src: url('../fonts/HalvarBreit-Lt.ttf') 
+}
+@font-face { 
+    font-family: 'Regular';
+    src: url('../fonts/HalvarBreit-Rg.ttf') 
+}

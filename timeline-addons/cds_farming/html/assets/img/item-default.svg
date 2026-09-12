@@ -1,0 +1,40 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="58" fill="#0D1521"/>
+  <rect x="14" y="14" width="228" height="228" rx="44" stroke="url(#outer)" stroke-width="8"/>
+  <path d="M128 56L182 87V169L128 200L74 169V87L128 56Z" fill="url(#fill)" fill-opacity="0.12" stroke="url(#line)" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M128 56V200" stroke="url(#line2)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M74 87L128 119L182 87" stroke="url(#line3)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M74 169L128 137L182 169" stroke="url(#line4)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="128" cy="128" r="88" stroke="url(#ring)" stroke-width="8" stroke-dasharray="118 38"/>
+  <defs>
+    <linearGradient id="outer" x1="34" y1="24" x2="220" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C6BFF"/>
+      <stop offset="1" stop-color="#62D0FF"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="128" y1="56" x2="128" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C6BFF"/>
+      <stop offset="1" stop-color="#62D0FF"/>
+    </linearGradient>
+    <linearGradient id="line" x1="74" y1="62" x2="182" y2="191" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C6BFF"/>
+      <stop offset="1" stop-color="#62D0FF"/>
+    </linearGradient>
+    <linearGradient id="line2" x1="128.5" y1="56" x2="128.5" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C6BFF"/>
+      <stop offset="1" stop-color="#62D0FF"/>
+    </linearGradient>
+    <linearGradient id="line3" x1="74" y1="87" x2="182" y2="119" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C6BFF"/>
+      <stop offset="1" stop-color="#62D0FF"/>
+    </linearGradient>
+    <linearGradient id="line4" x1="74" y1="169" x2="182" y2="137" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C6BFF"/>
+      <stop offset="1" stop-color="#62D0FF"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="40" y1="40" x2="216" y2="216" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8FD9FF"/>
+      <stop offset="0.55" stop-color="#1C6BFF"/>
+      <stop offset="1" stop-color="#8FD9FF"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,45 @@
+/* Inputs brauchen user-select und müssen tippbar sein */
+input, textarea {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* Menu-Dialog Input: Klickbar, gut sichtbar, Cursor */
+.menu_dialog .menu_dialog_input input {
+  cursor: text;
+}
+
+:root {
+    --page-selector-active: #3F71F3;
+    --menu-bg: #191F2B;
+    --checkbox-active: #3F71F3;
+    --submenulist-bg: radial-gradient(65.41% 65.41% at 52.12% 0%, #2C3F68 0%, #1D283F 100%);
+    --submenuitem-active-bg: rgba(68, 100, 178, 0.15);
+    --active: #3F71F3;
+
+    --id-color-bg: #4477FE;
+    --player-walk-icon-dropshadow: rgba(0, 132, 255, 0.35);
+    
+    --selected-modal-category-border: #648EF8;
+    --selected-modal-category-bg: radial-gradient(108.29% 101.16% at 50.22% 51.16%, #314D96 0%, #5281FC 100%);
+
+    --player-modal-action-btn-border: #648EF8;
+    --player-modal-action-btn-bg: radial-gradient(56.75% 56.67% at 50% 50%, #314D96 0%, #5281FC 100%);
+
+    --player-ban-btn-border: rgba(30, 191, 255, 0.5);
+    --player-ban-btn-bg: rgba(30, 128, 255, 0.445);
+    --player-ban-btn-font-color: rgba(30, 128, 255, 1);
+
+    --player-input-modal-bg: #0b1731;
+
+    --menu-dialog-border: rgba(0, 34, 120, 0.406);
+    --menu-dialog-input-border: rgba(255, 255, 255, 0.15);
+    --menu-dialog-input-bg: rgba(217, 217, 217, 0.05);
+    --menu-dialog-dropshadow: rgba(0, 0, 0, 0.5);
+    --menu-dialog-button-border: rgba(255, 255, 255, 0.15);
+    --menu-dialog-button-bg: radial-gradient(156.84% 68.28% at 50% 50%, #1B2542 0%, #3357B3 100%);
+    --menu-dialog-boxshadow: #3053A7;
+    --menu-dialog-cancel-button-bg: radial-gradient(156.84% 68.28% at 50% 50%, #421B2A 0%, #B33368 100%);
+    --menu-dialog-cancel-button-boxshadow: #A7305E;
+}
+
